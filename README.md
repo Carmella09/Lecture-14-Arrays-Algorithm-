@@ -106,11 +106,84 @@ Exercise
 
 Write a program that fills an integer array of 10 numbers From the user in an array Then print out the largest number 
 
+    #include <iostream>
+    #include <array>
+    #include <algorithm>
+    #include <string>
+    using namespace std;
 
+    int main()
+    {
+        int i;
+        double n = 0, arr[10];
+        cout << "\nEnter 10 numbers\n\n";
+        for (i = 0; i < 10; i++)
+        {
+            cout << "Number " << i + 1 << " : ";
+            cin >> arr[i];
+
+            while (cin.fail())
+            {
+                cout << "\nInvalid Input\n";
+                cout << "Enter the number again\n\n";
+                cin.clear();
+                cin.ignore(1000, '\n');
+
+            }
+        }
+
+        for (i = 0; i < 10; ++i)
+        {
+
+            if (n < arr[i])
+                n = arr[i];
+        }
+        cout << "Largest number = " << n;
+
+        return 0;
+    }
 
 Exercise
 
 Write a program that fills an integer array of 10 numbers From the user in an array Then print out the smallest number
+
+    #include <iostream>
+    #include <array>
+    #include <algorithm>
+    #include <string>
+    using namespace std;
+
+    int main()
+    {
+        int i;
+        double n = 0, arr[10];
+        cout << "\nEnter 10 numbers\n\n";
+        for (i = 0; i < 10; ++i)
+        {
+            cout << "Number " << i + 1 << ": ";
+            cin >> arr[i];
+
+            while (cin.fail())
+            {
+                cout << "\nInvalid Input\n";
+                cout << "Enter the number again\n\n";
+                cin.clear();
+                cin.ignore(1000, '\n');
+
+            }
+        }
+        n = arr[0];
+        for (i = 0; i < 10; ++i)
+        {
+
+            if (n > arr[i])
+                n = arr[i];
+        }
+        cout << "smallest number = " << n;
+
+        return 0;
+    }
+
 
 
 
