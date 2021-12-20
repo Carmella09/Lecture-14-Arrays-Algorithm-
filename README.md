@@ -27,7 +27,6 @@ Write a program that fills an integer array of 1000 random numbers between 1-100
     }
 
 
-Exercise
 
 Write a program that fills an integer array of 10 numbers From the user in an array Then print out the largest number 
 
@@ -68,7 +67,7 @@ Write a program that fills an integer array of 10 numbers From the user in an ar
         return 0;
     }
 
-Exercise
+
 
 Write a program that fills an integer array of 10 numbers From the user in an array Then print out the smallest number
 
